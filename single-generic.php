@@ -66,13 +66,13 @@ get_header(); ?>
 
 		var thumbnailHeight = $('.post-thumbnail').height();
 		if (thumbnailHeight) {
-			$(".side-social").css('top', thumbnailHeight + 70 + 30);
+			// $(".side-social").css('top', thumbnailHeight + 70 + 30);
 
 			$(window).scroll(function() {
 				var scrollTop = $(window).scrollTop();
 
-				if (scrollTop > thumbnailHeight + 30) {
-					$(".side-social").css('top', scrollTop + 70 + 30);
+				if (scrollTop > thumbnailHeight) {
+					$(".side-social").css('top', scrollTop - thumbnailHeight);
 				}
 			});
 		}
