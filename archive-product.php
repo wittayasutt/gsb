@@ -132,6 +132,18 @@ get_header(); ?>
 	// 	}).scroll();
 	// });
 
+	setInterval(function() {
+		var lessthan = $('.sf-input-range-number.sf-range-min.sf-input-text')
+		if (lessthan.siblings().length === 0) lessthan.before('<span class="lessthan">น้อยกว่า</span>');
+		var opacityMin = lessthan.val() === '1,000,000' ? 1 : 0
+		$('.lessthan').css('opacity', opacityMin);
+
+		var morethan = $('.sf-input-range-number.sf-range-max.sf-input-text')
+		if (morethan.siblings().length === 0) morethan.before('<span class="morethan">มากกว่า</span>');
+		var opacityMax = morethan.val() === '50,000,000' ? 1 : 0
+		$('.morethan').css('opacity', opacityMax);
+	}, 10);
+
 	$('input[type=range]').on('input', function () {
 		$(this).trigger('change');
 		$(this).val(function(index, value) {
