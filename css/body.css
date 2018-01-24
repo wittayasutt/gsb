@@ -6901,6 +6901,7 @@ a.enter-modal {
 @media screen and (orientation:portrait) {
 	.syp-head {
 		height: 100vh !important;
+		max-height: 100vh;
 	}
 	.syp-head>.arrow-left {
 		top: 27vh;
@@ -6935,6 +6936,9 @@ a.enter-modal {
 }
 
 @media screen and (max-width: 767px) {
+	.syp-head {
+		max-height: 100vh;
+	}
 	.syp-head>.container>h2 {
 		font-size: 24px;
 	}
