@@ -151,7 +151,7 @@ jQuery(document).ready(function ($) {
 	// $('.searchandfilter').find('ul').find('.sf-field-taxonomy-genre').find('h4').css('display', 'inline-block');
 	// $('.searchandfilter').find('ul').find('.sf-field-taxonomy-genre').find('h4').css('margin-right', '16px');
 
-		var slidesPerView = userAgentDetect() ? 2 : 3
+		// var slidesPerView = userAgentDetect() ? 3 : 4
 
 	// $('.searchandfilter').children().css('display', 'flex');
 	// $('.searchandfilter').find('ul').find('.sf-field-taxonomy-genre').css('flex', '1');
@@ -160,7 +160,7 @@ jQuery(document).ready(function ($) {
 
 	$(document).ready(function () {
 		var mySwiper = new Swiper('.swiper-container', {
-			slidesPerView: slidesPerView,
+			slidesPerView: 4,
 			spaceBetween: 30,
 			loop: true,
 			navigation: {
@@ -180,15 +180,15 @@ jQuery(document).ready(function ($) {
 				},
 				// when window width is <= 640px
 				640: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 					spaceBetween: 30
 				},
 				768: {
-					slidesPerView: 4,
+					slidesPerView: 3,
 					spaceBetween: 30
 				},
 				1024: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					spaceBetween: 30
 				},
 
