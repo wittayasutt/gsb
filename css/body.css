@@ -6707,7 +6707,7 @@ a.enter-modal {
 
 .syp-head {
 	height: 780px;
-	max-height: 100vh;
+	max-height: calc(100vh - 70px);
 	max-width: 100vw;
 	position: relative;
 	background: url('../img/showproduct_bg.jpg') #38373c;
@@ -6870,9 +6870,10 @@ a.enter-modal {
 	flex-direction: row;
 }
 
-:root .syp-head>.swiper-control {
+
+/* :root .syp-head>.swiper-control {
 	display: none\9;
-}
+} */
 
 .syp-head>.swiper-control>.lineWrapper {
 	flex: 1;
@@ -6946,6 +6947,9 @@ a.enter-modal {
 }
 
 @media screen and (max-width: 767px) and (orientation:landscape) {
+	.syp-head {
+		max-height: 100vh;
+	}
 	.syp-head>.arrow-right {
 		display: none;
 	}
@@ -6956,7 +6960,11 @@ a.enter-modal {
 		display: none;
 	}
 	.syp-head>.swiper-container {
+		width: 55vw;
 		bottom: 15vh;
+	}
+	.syp-head>.swiper-control {
+		right: calc(50vw - 150px);
 	}
 }
 
