@@ -6863,7 +6863,7 @@ a.enter-modal {
 
 .syp-head>.swiper-control {
 	position: absolute;
-	right: calc(60vw - 150px);
+	right: calc(60vw - 170px);
 	bottom: 5vh;
 	width: 96px;
 	display: flex;
@@ -6871,9 +6871,9 @@ a.enter-modal {
 }
 
 
-/* :root .syp-head>.swiper-control {
-	display: none\9;
-} */
+:root .syp-head>.swiper-control {
+	right: calc(60vw - 190px)\0;
+}
 
 .syp-head>.swiper-control>.lineWrapper {
 	flex: 1;
