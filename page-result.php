@@ -155,7 +155,7 @@ get_header();?>
 							</div>
 							<div class="more-link">
 								<a href="https://www.gsb.or.th/lp_Deposit.aspx" class="btn-more" target="_blank">เงินฝาก</a>
-								<a href="https://www.gsb.or.th/lotto.aspx" class="btn-more" target="_blank">สลากออมสิน</a>
+								<a href="https://www.gsb.or.th/lotto/lottery/DigitalSalakOnMyMo.aspx" class="btn-more" target="_blank">สลากออมสิน</a>
 								<a href="https://www.gsb.or.th/GsbOnlineService.aspx" class="btn-more" target="_blank">บริการออนไลน์</a>
 							</div>
 						</div>
