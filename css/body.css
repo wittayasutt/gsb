@@ -1521,6 +1521,12 @@ h6 {
 	}
 }
 
+@media screen and (max-width: 767px) and (orientation:landscape) {
+	.joinus>.block.img {
+		height: 80vh;
+	}
+}
+
 @media (min-width: 767px) and (max-width: 991px) {
 	.joinus>.block {
 		flex: none;
@@ -4801,7 +4807,6 @@ article.type-post.category-event {
 	display: block;
 	position: fixed;
 	z-index: 1;
-	padding-top: 100px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -4816,7 +4821,7 @@ article.type-post.category-event {
 	min-height: 730px;
 	width: 90%;
 	max-width: 808px;
-	margin: auto;
+	margin: 100px auto;
 	padding: 40px;
 	border-radius: 5px;
 	background-color: #ffffff;
@@ -4966,7 +4971,7 @@ article.type-post.category-event {
 
 @media (max-width: 767px) {
 	.cal-modal {
-		padding: 60px 0px 20px;
+		/* padding: 60px 0px 20px; */
 	}
 	.cal-modal>.content {
 		padding: 15px;
