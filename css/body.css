@@ -3158,6 +3158,7 @@ body {
 	flex-flow: column wrap;
 	height: 350px;
 	margin-bottom: 20px;
+	/* width: 48%; */
 }
 
 .counter {
@@ -3170,7 +3171,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	order: 1;
-	margin: 0 auto 10px;
+	margin: 0 0 10px;
 }
 
 .counter>.counterBox {
@@ -3228,8 +3229,8 @@ body {
 .act-img {
 	width: 48%;
 	order: 3;
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 .act-detail {
@@ -6870,7 +6871,6 @@ a.enter-modal {
 	flex-direction: row;
 }
 
-
 :root .syp-head>.swiper-control {
 	right: calc(60vw - 190px)\0;
 }
@@ -7107,15 +7107,23 @@ p.um-notice.err {
 	border-radius: 50%;
 }
 
-.dropdown-share>.dropdown-share-content>.seed-social>div.chk-copy>a {
+.dropdown-share>.dropdown-share-content>.seed-social>div.chk-copy>.social-copy {
 	background: #eaeaea;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	min-width: 40px;
+	width: 40px;
+	border-radius: 50%;
 }
 
 .dropdown-share>.dropdown-share-content>.seed-social>div i {
 	padding-top: 6px;
 }
 
-.dropdown-share>.dropdown-share-content>.seed-social>div.chk-copy>a>i {
+.dropdown-share>.dropdown-share-content>.seed-social>div.chk-copy>.social-copy>i {
 	color: #ec068d;
 	font-size: 18px;
 }
@@ -7126,41 +7134,21 @@ p.um-notice.err {
 
 @media (max-width: 767px) {
 	.dropdown-share {
-		position: fixed;
-		display: none;
-		height: 100%;
-		width: 100vh;
-		top: 0;
-		left: 0;
-		background: rgba(0, 0, 0, .7);
+		width: 310px;
+		margin-left: -120px;
 	}
 	.dropdown-share>.dropdown-share-content {
-		position: fixed;
-		height: 50vh;
-		width: 100vw;
-		bottom: 0;
-		left: 0;
-		transition: .001s;
-	}
-	.dropdown-share>.dropdown-share-content>.seed-social {
-		justify-content: center;
-	}
-	.dropdown-share>.dropdown-share-content>.seed-social>div {
-		flex: 1;
-		height: 100%;
-		width: 100%;
+		height: 100px;
 	}
 	.dropdown-share>.dropdown-share-content>.seed-social>div>a {
-		border-radius: 0%;
-		height: 100%;
-		width: 100%;
-		align-items: unset;
+		height: 55px;
+		min-width: 55px;
+		width: 55px;
 	}
-	.dropdown-share>.dropdown-share-content>.seed-social>div i {
-		height: 45px;
-		display: flex;
-		align-items: center;
-		padding-top: 0;
+	.dropdown-share>.dropdown-share-content>.seed-social>div.chk-copy>.social-copy {
+		height: 55px;
+		min-width: 55px;
+		width: 55px;
 	}
 }
 

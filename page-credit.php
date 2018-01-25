@@ -93,7 +93,7 @@ get_header();?>
           </span>
         </div>
         <div class="box">
-          เทอมเครดิต
+          เครดิตเทอม
           <div class="inputWrapper">
             <input id="sellTrm" type="text" onkeypress='return isNumberKey(event,this.id)'>
             <span>
@@ -140,7 +140,7 @@ get_header();?>
           </span>
         </div>
         <div class="box">
-          เทอมเครดิต
+          เครดิตเทอม
           <div class="inputWrapper">
             <input id="buyTrm" type="text" onkeypress='return isNumberKey(event,this.id)'>
             <span>
@@ -243,7 +243,7 @@ jQuery(document).ready(function($) {
 
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
-    $('.cal-modal').css('padding-top', scrollTop + 100);
+    if (!detectIE()) $('.cal-modal').find('.content').css('top', scrollTop);
   });
   
   function findResult() {
@@ -261,10 +261,20 @@ jQuery(document).ready(function($) {
     var buy = buyAvg * buyCr * buyTrm * 0.01;
 
     var result = sell + allStock - buy;
-    if (isNaN(result)) result = 0
-    else result = numberWithCommas(result.toFixed(0))
-
+    if (isNaN(result)) result = 0;
+    else result = numberWithCommas(result.toFixed(0));
     $(".cal-right").find(".result").text(result);
+  }
+
+  function detectIE() { 
+    if( navigator.userAgent.match(/MSIE /i)
+    || navigator.userAgent.match(/Trident/i)
+    ){
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 });
 </script>

@@ -266,7 +266,7 @@ jQuery(document).ready(function($) {
 		})
 	});
 
-	$('.seed-social').find('.line').after('<div class="chk-copy" onclick="copyToClipboard(\'#p1\')"><a><i class="fa fa-paperclip"></i></a></div>');
+	$('.seed-social').find('.line').after('<div class="chk-copy" onclick="copyToClipboard(\'#p1\')"><div class="social-copy"><i class="fa fa-paperclip"></i></div></div>');
 
 	$(".share").click(function() {
 		if ($('.dropdown-share').hasClass('show')) {
