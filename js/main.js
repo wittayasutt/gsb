@@ -192,7 +192,11 @@ $('#user-menu ul.sub-menu').toggleClass('active');
 });
 
 
-
+$('.masonry').masonry({
+	// options
+	itemSelector: 'article',
+	// columnWidth: 200
+});
 
 
 // ready

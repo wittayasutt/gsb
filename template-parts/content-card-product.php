@@ -18,7 +18,7 @@
 	$company_name = get_field('company_name', 'user_'. $author_id );
 	$company_desc = get_field('company_desc', 'user_'. $author_id );
 	$attachment_id = get_field('company_logo', 'user_'. $author_id );
-	$size = "medium"; // (thumbnail, medium, large, full or custom size)
+	$size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
 	$company_logo = wp_get_attachment_image_src( $attachment_id, $size );
 	$company_address = get_field('company_address', 'user_'. $author_id );
 	$company_phone = get_field('company_phone', 'user_'. $author_id );

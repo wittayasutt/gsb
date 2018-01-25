@@ -24,7 +24,7 @@ get_header(); ?>
 
 
 				$args = array(
-					'posts_per_page'	=> 3,
+					'posts_per_page'	=> -1,
 					'cat'	=> $cat,
 					'post_type'		=> 'post',
 					'meta_key'		=> 'select_banner',

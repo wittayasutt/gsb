@@ -113,6 +113,18 @@ get_header(); ?>
 		<?php else : ?>
 			<?php echo do_shortcode('[searchandfilter id="657"]'); ?>
 			<?php get_template_part( 'template-parts/content', 'none-product' ); ?>
+			<div class="_desktop">
+			<?php if (is_user_logged_in()): ?>
+				<a class="view-my-products" href="/profile"><?php esc_html_e( 'View My Products', 'seed' ); ?></a>
+			<?php endif; ?>
+			</div>
+
+			<div class="_mobile">
+			<?php if (is_user_logged_in()): ?>
+				<a class="view-my-products" href="/profile"><?php esc_html_e( 'View My Products', 'seed' ); ?></a>
+				<?php endif; ?>
+			</div>
+
 		<?php endif; ?>
 
 	</main><!-- #main -->
@@ -135,15 +147,11 @@ switch (SEED_BLOG_LAYOUT) {
 </div><!--container-->
 
 <?php get_footer(); ?>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 <script>
 jQuery(document).ready(function ($) {
 
-	$('.masonry').masonry({
-		// options
-		itemSelector: 'article',
-		// columnWidth: 200
-	});
+
 
 	// $('select').css('display', 'block');
 	// $('.searchandfilter').children().css('display', 'flex');

@@ -62,7 +62,7 @@ get_header(); ?>
 			?>
 
 			<div class="col m12 s12 pull-right">
-				<a href="<?php echo site_url('category/event'); ?>" class="btn-pre-event">Next Activities <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+				<a href="<?php echo site_url('category/event'); ?>" class="btn-pre-event">Back <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
