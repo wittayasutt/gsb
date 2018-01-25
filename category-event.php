@@ -156,9 +156,13 @@ get_header(); ?>
 						$('.act-table').find('tr').each(function(){
 							var date = $(this).find('td:first').text();
 							date = date.split(" ")[0];
+
+							var date_end = "<?php the_field('event_time_end', $p->ID); ?>";
+							date_end = moment(date_end, "YYYY-MM-DD").format('D MMM YYYY') ;
+
 							date = moment(date, "YYYY-MM-DD").format('D MMM YYYY');
 
-							$(this).find('td:first').text(date);
+							$(this).find('td:first').text(date+'-'+date_end);
 							$(this).find('td:first').removeClass('none');
 						})
 					});
